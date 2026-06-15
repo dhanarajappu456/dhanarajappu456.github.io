@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Message Sent | Dhanaraj S</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+  <style>
+    :root{
+      --bg:#050816;
+      --panel:rgba(13,18,39,.68);
+      --line:rgba(255,255,255,.13);
+      --text:#f8fbff;
+      --muted:#aab7d4;
+      --cyan:#22d3ee;
+      --blue:#60a5fa;
+      --violet:#a78bfa;
+      --pink:#fb7185;
+      --green:#34d399;
+    }
+    *{box-sizing:border-box}
+    html,body{min-height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;background:
+      radial-gradient(circle at 12% 18%, rgba(34,211,238,.24), transparent 28%),
+      radial-gradient(circle at 82% 16%, rgba(167,139,250,.23), transparent 30%),
+      radial-gradient(circle at 50% 88%, rgba(251,113,133,.15), transparent 35%),
+      linear-gradient(135deg,#050816 0%,#081022 46%,#120a2b 100%);z-index:-4}
+    body:after{content:"";position:fixed;inset:0;pointer-events:none;opacity:.28;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:44px 44px;mask-image:radial-gradient(circle at center, black, transparent 74%);z-index:-3}
+    .orb{position:fixed;border-radius:999px;filter:blur(4px);opacity:.8;z-index:-2;animation:drift 10s ease-in-out infinite alternate}
+    .orb.one{width:270px;height:270px;left:-80px;top:10%;background:radial-gradient(circle,#22d3ee,transparent 65%)}
+    .orb.two{width:320px;height:320px;right:-110px;top:20%;background:radial-gradient(circle,#a78bfa,transparent 65%);animation-delay:-3s}
+    .orb.three{width:240px;height:240px;left:35%;bottom:-100px;background:radial-gradient(circle,#fb7185,transparent 65%);animation-delay:-6s}
+    @keyframes drift{to{transform:translate3d(28px,-34px,0) scale(1.08)}}
+    .wrap{min-height:100vh;display:grid;place-items:center;padding:32px 18px;position:relative}
+    .card{width:min(980px,100%);position:relative;padding:clamp(28px,6vw,72px);border:1px solid var(--line);border-radius:34px;background:linear-gradient(145deg,rgba(255,255,255,.11),rgba(255,255,255,.045));box-shadow:0 30px 100px rgba(0,0,0,.48), inset 0 1px 0 rgba(255,255,255,.15);backdrop-filter:blur(22px);overflow:hidden;isolation:isolate}
+    .card:before{content:"";position:absolute;inset:-2px;background:conic-gradient(from 140deg, transparent, rgba(34,211,238,.7), rgba(167,139,250,.74), rgba(251,113,133,.55), transparent 52%);z-index:-2;animation:spin 8s linear infinite}
+    .card:after{content:"";position:absolute;inset:1px;border-radius:33px;background:linear-gradient(145deg,rgba(8,13,31,.94),rgba(11,18,42,.87));z-index:-1}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .success-icon{width:118px;height:118px;border-radius:32px;margin:0 auto 28px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(52,211,153,.22),rgba(34,211,238,.18));border:1px solid rgba(52,211,153,.42);box-shadow:0 0 60px rgba(52,211,153,.28);animation:pop 900ms cubic-bezier(.2,1.4,.2,1), pulse 2.2s ease-in-out infinite 1s}
+    .success-icon i{font-size:54px;color:var(--green);filter:drop-shadow(0 0 18px rgba(52,211,153,.65))}
+    @keyframes pop{0%{transform:scale(.4) rotate(-18deg);opacity:0}100%{transform:scale(1) rotate(0);opacity:1}}
+    @keyframes pulse{50%{transform:translateY(-6px) scale(1.04)}}
+    .eyebrow{text-align:center;display:block;margin:0 auto 14px;width:max-content;max-width:100%;padding:10px 15px;border-radius:999px;border:1px solid rgba(96,165,250,.35);background:rgba(96,165,250,.1);color:#dbeafe;font-weight:800;font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+    h1{font-family:"Space Grotesk",Inter,sans-serif;text-align:center;font-size:clamp(42px,8vw,92px);line-height:.92;margin:0;letter-spacing:-.07em;background:linear-gradient(90deg,#fff,#bfdbfe,#67e8f9,#c4b5fd,#fff);-webkit-background-clip:text;background-clip:text;color:transparent;background-size:240% auto;animation:shine 5s linear infinite}
+    @keyframes shine{to{background-position:240% center}}
+    .lead{max-width:720px;margin:24px auto 0;text-align:center;font-size:clamp(17px,2.5vw,22px);line-height:1.7;color:#d7e5ff}
+    .typing{height:34px;margin:22px auto 0;text-align:center;color:var(--cyan);font-weight:800;font-size:clamp(15px,2.4vw,21px);text-shadow:0 0 28px rgba(34,211,238,.34)}
+    .cursor{display:inline-block;margin-left:4px;color:#fff;animation:blink .85s steps(2,end) infinite}@keyframes blink{50%{opacity:0}}
+    .actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+    .btn{position:relative;display:inline-flex;align-items:center;gap:10px;padding:14px 20px;border-radius:999px;text-decoration:none;font-weight:900;color:#fff;border:1px solid rgba(255,255,255,.16);transition:transform .25s ease,box-shadow .25s ease,background .25s ease;overflow:hidden}
+    .btn.primary{background:linear-gradient(135deg,var(--blue),var(--cyan),var(--violet));box-shadow:0 20px 55px rgba(34,211,238,.25)}
+    .btn.ghost{background:rgba(255,255,255,.06)}
+    .btn:hover{transform:translateY(-4px);box-shadow:0 24px 70px rgba(96,165,250,.26)}
+    .mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
+    .mini{padding:18px;border-radius:22px;background:rgba(255,255,255,.07);border:1px solid var(--line);text-align:center;animation:float 4s ease-in-out infinite}
+    .mini:nth-child(2){animation-delay:-1.2s}.mini:nth-child(3){animation-delay:-2.4s}@keyframes float{50%{transform:translateY(-9px)}}
+    .mini b{display:block;font-size:18px;margin-bottom:5px}.mini span{color:var(--muted);font-size:13px}
+    .confetti{position:fixed;top:-16px;width:10px;height:18px;border-radius:4px;opacity:.9;animation:fall linear forwards;z-index:4}@keyframes fall{to{transform:translate3d(var(--x),110vh,0) rotate(720deg);opacity:.1}}
+    .footer-note{text-align:center;color:var(--muted);font-size:13px;margin-top:22px}
+    @media(max-width:640px){.wrap{padding:18px 12px}.card{border-radius:26px;padding:28px 18px;backdrop-filter:blur(12px)}.success-icon{width:92px;height:92px;border-radius:25px}.success-icon i{font-size:42px}.mini-grid{grid-template-columns:1fr}.btn{width:100%;justify-content:center}.orb{filter:blur(10px);opacity:.45}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="orb one"></div><div class="orb two"></div><div class="orb three"></div>
+  <main class="wrap">
+    <section class="card" aria-label="Message sent confirmation">
+      <div class="success-icon"><i class="fa-solid fa-check"></i></div>
+      <p class="eyebrow">Message delivered</p>
+      <h1>Thank You!</h1>
+      <p class="lead">Your message has been sent successfully. I’ll review it and get back to you soon.</p>
+      <div class="typing"><span id="thankType">Connecting ideas to engineering outcomes</span><span class="cursor">|</span></div>
+      <div class="actions">
+        <a class="btn primary" href="index.html#home"><i class="fa-solid fa-house"></i> Back to Portfolio</a>
+        <a class="btn ghost" href="index.html#projects"><i class="fa-solid fa-diagram-project"></i> View Projects</a>
+        <a class="btn ghost" href="https://topmate.io/dhanaraj_sujatha10/"><i class="fa-solid fa-calendar-check"></i> Book Mentorship</a>
+      </div>
+      <div class="mini-grid">
+        <div class="mini"><b>Software</b><span>Full-stack systems</span></div>
+        <div class="mini"><b>AI</b><span>LLM products</span></div>
+        <div class="mini"><b>Mentoring</b><span>DSA & interviews</span></div>
+      </div>
+      <p class="footer-note">Dhanaraj S • Software Engineer & AI Systems Builder</p>
+    </section>
+  </main>
+  <script>
+    const words=["Building scalable software","Designing AI products","Creating developer tools","Solving real-world problems","Mentoring future engineers"];
+    const el=document.getElementById('thankType');let wi=0,ci=0,del=false;
+    function type(){const w=words[wi];el.textContent=w.slice(0,ci);if(!del&&ci<w.length)ci++;else if(!del){del=true;setTimeout(type,1200);return}else if(ci>0)ci--;else{del=false;wi=(wi+1)%words.length}setTimeout(type,del?38:70)}type();
+    const colors=['#22d3ee','#60a5fa','#a78bfa','#fb7185','#34d399','#fbbf24'];
+    for(let i=0;i<72;i++){const c=document.createElement('i');c.className='confetti';c.style.left=Math.random()*100+'vw';c.style.background=colors[i%colors.length];c.style.setProperty('--x',(Math.random()*220-110)+'px');c.style.animationDuration=(2.4+Math.random()*3.2)+'s';c.style.animationDelay=(Math.random()*1.2)+'s';document.body.appendChild(c);setTimeout(()=>c.remove(),7000)}
+  </script>
+</body>
+</html>

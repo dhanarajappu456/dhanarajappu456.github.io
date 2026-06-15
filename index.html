@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhanaraj S | Software Engineer & Full-Stack Developer</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="meshCanvas" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home"><img src="images/profile_main.jpeg" alt="Dhanaraj S"><span>Dhanaraj S</span></a>
+    <button class="nav-toggle" aria-label="Open navigation menu" aria-controls="primaryNav" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="site-nav" id="primaryNav">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#research">Research</a><a href="#skills">Skills</a><a href="#leetcode">LeetCode</a><a href="#mentorship">Mentorship</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-orb orb-a"></div><div class="hero-orb orb-b"></div>
+      <div class="wrap hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Software Engineer • Full-Stack Developer • AI Systems Builder</p>
+          <h1><span class="typing-prefix">I’m</span> <span class="typing-gradient" id="typewriter">Building Scalable Software</span><span class="typing-cursor">|</span></h1>
+          <p class="hero-text">I design and build backend systems, React/MERN applications, automation platforms, LLM products, and interview-focused developer tools with strong computer science fundamentals.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="Dhanaraj_Resume_Latest.pdf">Download Resume</a>
+            <a class="btn ghost" href="https://topmate.io/dhanaraj_sujatha10/">Book Mentorship</a>
+          </div>
+          <div class="metrics">
+            <div><strong>Full Stack</strong><span>React • MERN • APIs</span></div>
+            <div><strong>System Design</strong><span>Scalable architecture</span></div>
+            <div><strong>CS Core</strong><span>DSA • OS • DBMS</span></div>
+          </div>
+        </div>
+        <div class="hero-visual reveal delay-1">
+          <div class="device-card float-card">
+            <div class="code-top"><span></span><span></span><span></span></div>
+            <pre><code>const engineer = {
+  role: "Software Developer",
+  stack: ["React", "Node", "Spring"],
+  focus: "Systems + AI"
+};</code></pre>
+          </div>
+          <div class="profile-sphere"><img src="images/profile_main.jpeg" alt="Dhanaraj S"></div>
+          <div class="mini-card card-a"><i class="fa-solid fa-code"></i><b>Clean Code</b></div>
+          <div class="mini-card card-b"><i class="fa-solid fa-database"></i><b>DBMS</b></div>
+          <div class="mini-card card-c"><i class="fa-solid fa-brain"></i><b>LLM Apps</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="wrap two-col">
+        <div class="section-title reveal"><p class="eyebrow">About</p><h2>Software developer with product, systems and mentoring mindset.</h2></div>
+        <div class="glass reveal delay-1">
+          <p>I am Dhanaraj S, a Software Engineer focused on backend systems, full-stack development, distributed architectures, and AI-powered applications. I enjoy building scalable platforms, developer productivity tools, automation systems, and research-driven products.</p>
+          <p>My foundation includes Data Structures & Algorithms, Operating Systems, DBMS, Computer Networks, OOP, System Design, and competitive programming. I also mentor students and early-career engineers in DSA, full-stack development, resumes, and interview preparation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects dark" id="projects">
+      <div class="wrap">
+        <div class="section-title center reveal"><p class="eyebrow">Featured Projects</p><h2>Products built around automation, AI and developer productivity.</h2></div>
+        <div class="project-grid">
+          <article class="project-card reveal"><span class="tag">LLM Platform</span><h3>AI Influencer Follower Interaction System</h3><p>An LLM-powered platform for creators/influencers to manage follower conversations, automate repetitive engagement, and keep human oversight for sensitive or high-value interactions.</p><ul><li>LLM chat workflows</li><li>Semantic memory and context handling</li><li>Automated replies with review queue</li><li>Analytics for audience interaction</li></ul><div class="stack">React • Node.js • LangChain • Vector DB</div></article>
+          <article class="project-card reveal delay-1"><span class="tag">Automation</span><h3>JobIQ – Intelligent Job Application Platform</h3><p>A job application platform that finds relevant job openings, ranks opportunities, optimizes resume alignment, and helps apply faster to matching positions.</p><ul><li>Job relevance scoring</li><li>Resume/job matching engine</li><li>Application tracking dashboard</li><li>Automation-first workflow</li></ul><div class="stack">React • Spring Boot • PostgreSQL • AI Matching</div></article>
+          <article class="project-card reveal delay-2"><span class="tag">Chrome Extension</span><h3>LeetCode & Online Judge Assistant</h3><p>A browser extension for coding platforms that provides progressive hints, optimized solution guidance, clean-code suggestions, and complexity analysis without killing the learning process.</p><ul><li>Hint-first problem solving</li><li>Optimized code suggestions</li><li>Time/space complexity analysis</li><li>Clean code best practices</li></ul><div class="stack">JavaScript • Chrome APIs • DSA • AI</div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section research" id="research">
+      <div class="wrap research-grid">
+        <div class="section-title reveal"><p class="eyebrow">Research Publication</p><h2>Research Paper on LLM to boost social media interaction</h2><p>Read below.👇</p><div class="hero-actions"><a class="btn primary" href="https://drive.google.com/file/d/1NjBheXpmYbpDRc-nkQURP0CThaM_tnl5/view?usp=sharing" target="_blank" rel="noreferrer">Open Paper</a><a class="btn ghost" href="#paperPreview">Preview Paper</a><a class="btn ghost" href="https://drive.google.com/file/d/1NjBheXpmYbpDRc-nkQURP0CThaM_tnl5/view?usp=sharing" target="_blank" rel="noreferrer">Download / View Paper</a></div></div>
+        <div class="paper-card reveal delay-1" id="paperPreview"><div class="browser-bar"><span></span><span></span><span></span><b>Research Paper Preview</b></div><iframe title="Research paper preview" src="https://drive.google.com/file/d/1NjBheXpmYbpDRc-nkQURP0CThaM_tnl5/preview" allow="autoplay"></iframe></div>
+      </div>
+    </section>
+
+    <section class="section skills dark" id="skills">
+      <div class="wrap">
+        <div class="section-title center reveal"><p class="eyebrow">Skills Matrix</p><h2>Software developer skillset with strong CS fundamentals.</h2></div>
+        <div class="skill-matrix">
+          <div class="skill-box reveal"><h3>Full-Stack</h3><p>React, Next.js, JavaScript, TypeScript, Tailwind, Redux, responsive UI</p></div>
+          <div class="skill-box reveal"><h3>Backend</h3><p>Node.js, Express.js, Spring Boot, REST APIs, Auth, Microservices</p></div>
+          <div class="skill-box reveal"><h3>MERN</h3><p>MongoDB, Express, React, Node.js, API design, deployment workflows</p></div>
+          <div class="skill-box reveal"><h3>Databases</h3><p>PostgreSQL, MySQL, MongoDB, Redis, schema design, query optimization</p></div>
+          <div class="skill-box reveal"><h3>Computer Science</h3><p>DSA, OS, DBMS, CN, OOP, Distributed Systems, System Design</p></div>
+          <div class="skill-box reveal"><h3>AI & LLM</h3><p>LangChain, RAG, vector databases, prompt engineering, AI agents</p></div>
+          <div class="skill-box reveal"><h3>DevOps</h3><p>Docker, Kubernetes, AWS, Linux, GitHub Actions, CI/CD</p></div>
+          <div class="skill-box reveal"><h3>Competitive Programming</h3><p>LeetCode, algorithms, problem solving, interview preparation</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section leetcode" id="leetcode">
+      <div class="wrap leetcode-card glass reveal">
+        <div><p class="eyebrow">Competitive Programming</p><h2>LeetCode Problem Solving</h2><p class="solved">Solved <span class="prob-count" data-fallback="1020">loading…</span> problems</p><a class="btn ghost" href="https://leetcode.com/dan_stark123/">LeetCode Profile</a></div>
+        <div class="rings"><div class="ring ring-easy"><span>—</span><small>Easy</small></div><div class="ring ring-medium"><span>—</span><small>Medium</small></div><div class="ring ring-hard"><span>—</span><small>Hard</small></div></div>
+      </div>
+    </section>
+
+    <section class="section mentorship dark" id="mentorship">
+      <div class="wrap two-col">
+        <div class="section-title reveal"><p class="eyebrow">Coaching & Mentoring</p><h2>Helping students and engineers become job-ready.</h2></div>
+        <div class="glass reveal delay-1"><p>I mentor learners in Data Structures & Algorithms, system design, backend development, full-stack engineering, software careers, resume improvement, and technical interview preparation.</p><div class="mentor-list"><span>DSA Coaching</span><span>System Design</span><span>Resume Review</span><span>Mock Interviews</span><span>Full-Stack Roadmap</span><span>Backend Projects</span></div><a class="btn primary" href="https://topmate.io/dhanaraj_sujatha10/">Book on Topmate</a></div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="wrap contact-grid">
+        <div class="section-title reveal"><p class="eyebrow">Contact</p><h2>Let’s build something great.</h2><p>Have an opportunity, collaboration, mentorship request, or project idea? Send a message.</p><div class="contact-links"><a href="mailto:dhanarajwebsite@gmail.com"><i class="fa-solid fa-envelope"></i>dhanarajwebsite@gmail.com</a><a href="https://www.linkedin.com/in/dhanaraj-s-7a6147138"><i class="fa-brands fa-linkedin"></i>LinkedIn</a><a href="https://github.com/dhanarajappu456"><i class="fa-brands fa-github"></i>GitHub</a></div></div>
+        <form class="contact-form reveal delay-1" id="contactForm" action="https://formsubmit.co/dhanarajwebsite@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false"><input type="hidden" name="_template" value="table"><input type="hidden" name="_next" value="https://dhanarajappu456.github.io/thankyou.html"><input type="hidden" name="_subject" value="New portfolio contact message">
+          <div class="form-row"><input type="text" placeholder="Name" name="name" required><input type="email" placeholder="Email" name="email" required></div>
+          <input type="text" placeholder="Subject" name="subject" required><textarea name="message" placeholder="Message" rows="6" required></textarea>
+          <button class="btn primary" type="submit">Send Message</button><p class="form-note"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <a class="scroll-up-btn" href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+  <script src="script.js"></script>
+</body>
+</html>

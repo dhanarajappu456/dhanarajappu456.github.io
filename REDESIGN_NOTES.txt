@@ -1,0 +1,12 @@
+Creative redesign completed while keeping the original portfolio content.
+
+Changed:
+- Rebuilt index.html with a completely new section structure.
+- Replaced old Bootstrap/jQuery layout with a modern responsive design.
+- Added glassmorphism navigation, animated hero, floating skill badges, reveal-on-scroll animations, interactive theme toggle, custom typing animation, timeline education layout, post cards, LeetCode card, and redesigned contact form.
+- Kept existing links, text content, images, contact form target, and CV link.
+
+Files changed:
+- index.html
+- style.css
+- script.js

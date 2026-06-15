@@ -1,0 +1,12 @@
+Cross-portable/mobile fixes added:
+
+1. All asset paths remain relative, so the site works from any folder, localhost, GitHub Pages, Netlify, Vercel, or standard hosting.
+2. Mobile flicker reduced by disabling mouse-follow glow, 3D tilt, and magnetic pointer transforms on touch devices.
+3. Canvas particles are lighter on mobile and removed for reduced-motion users.
+4. Header/nav changed to stable sticky mobile behavior.
+5. Responsive breakpoints improved for hero, LeetCode rings, cards, forms, and project grids.
+6. Backdrop blur has fallback for browsers/devices that render it poorly.
+
+For local testing, run:
+python -m http.server 5500
+then open http://localhost:5500

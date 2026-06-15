@@ -1,0 +1,15 @@
+Software-engineer-focused redesign completed.
+
+Changes:
+- Rewritten hero/About to position Dhanaraj as Software Engineer, Full-Stack Developer and AI Systems Builder.
+- Added Projects section: AI Influencer Interaction System, JobIQ, LeetCode/Online Judge Assistant Chrome Extension.
+- Added Research Publication section using Google Drive paper access and embedded preview area.
+- Added Mentorship section with Topmate link.
+- Rebuilt skills around React, MERN, backend, system design, DSA, OS, DBMS, distributed systems and AI/LLM engineering.
+- Kept LeetCode API logic and mobile-safe fallback without showing fake 0/0/0.
+- Rebuilt CSS for premium enterprise look with desktop animation and mobile flicker prevention.
+- Contact form still uses FormSubmit and must be tested via localhost/deployment, not file://.
+
+Local test:
+python -m http.server 5500
+open http://localhost:5500
