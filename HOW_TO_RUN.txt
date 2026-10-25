@@ -1,0 +1,13 @@
+CONTACT FORM FIX
+
+FormSubmit does not work when index.html is opened directly as a file:// page.
+
+To test locally:
+1. Open terminal inside this website folder.
+2. Run: python -m http.server 5500
+3. Open: http://localhost:5500
+4. Submit the form from that localhost URL.
+
+For final use, upload/deploy the site to GitHub Pages, Netlify, Vercel, or any web server. The form will submit from the hosted URL.
+
+I also added a visible note under the submit button and a JavaScript guard so local file testing no longer fails silently.

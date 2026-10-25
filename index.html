@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhanaraj S | Software Engineer · Full-Stack Developer · AI Systems</title>
+  <meta name="description" content="Portfolio of Dhanaraj S — Software Engineer, Full-Stack Developer and AI systems builder. Projects, published research, skills and mentorship." />
+  <meta name="theme-color" content="#3D33E8" />
+  <meta property="og:title" content="Dhanaraj S — Software Engineer" />
+  <meta property="og:description" content="Backend systems, React/MERN apps, LLM products and developer tools." />
+  <meta property="og:image" content="images/profile_main.jpeg" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,300..900&family=Instrument+Sans:wdth,wght@75..100,400..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- scroll progress -->
+  <div class="scroll-progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <!-- section rail (desktop) -->
+  <aside class="event-bus" id="eventBus" aria-hidden="true">
+    <div class="bus-line"><span class="bus-fill" id="busFill"></span></div>
+    <nav class="bus-stations">
+      <a href="#home"       class="station" data-label="Home" tabindex="-1"><i></i></a>
+      <a href="#about"      class="station" data-label="About" tabindex="-1"><i></i></a>
+      <a href="#projects"   class="station" data-label="Projects" tabindex="-1"><i></i></a>
+      <a href="#research"   class="station" data-label="Research" tabindex="-1"><i></i></a>
+      <a href="#skills"     class="station" data-label="Skills" tabindex="-1"><i></i></a>
+      <a href="#leetcode"   class="station" data-label="LeetCode" tabindex="-1"><i></i></a>
+      <a href="#mentorship" class="station" data-label="Mentorship" tabindex="-1"><i></i></a>
+      <a href="#contact"    class="station" data-label="Contact" tabindex="-1"><i></i></a>
+    </nav>
+  </aside>
+
+  <!-- boot overlay -->
+  <div class="boot-overlay" id="bootOverlay" aria-hidden="true">
+    <div class="boot-inner">
+      <div class="boot-logo">DS<span class="boot-cursor"></span></div>
+      <div class="boot-bar"><span></span></div>
+      <p class="boot-text" id="bootText">initialising portfolio.sys …</p>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#home" aria-label="Dhanaraj S — home">
+      <img src="images/profile_main.jpeg" alt="" width="40" height="40" />
+      <span>Dhanaraj S</span>
+    </a>
+    <nav class="site-nav" id="primaryNav" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#research">Research</a>
+      <a href="#skills">Skills</a>
+      <a href="#leetcode">LeetCode</a>
+      <a href="#mentorship">Mentorship</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+    <div class="header-tools">
+      <button class="sound-toggle" id="soundToggle" aria-label="Toggle sound effects" aria-pressed="false" title="Sound off">
+        <i class="fa-solid fa-volume-xmark"></i>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-controls="primaryNav" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="hero-role"><span class="pulse-dot" aria-hidden="true"></span> Software Engineer, Full-Stack Developer &amp; AI enthusiast</p>
+          <p class="hero-line">
+            I build systems that<br />
+            <span class="typewrap"><span id="typewriter">react &amp; scale</span><span class="type-cursor" aria-hidden="true"></span></span>
+          </p>
+          <p class="hero-text">
+            Backend systems, React/MERN applications, automation platforms, LLM products and
+            interview-focused developer tools — engineered on strong computer-science fundamentals.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary magnetic" href="#projects"><i class="fa-solid fa-rocket"></i> View projects</a>
+            <a class="btn ghost magnetic" href="Dhanaraj_Resume_Latest.pdf" target="_blank" rel="noreferrer"><i class="fa-solid fa-file-arrow-down"></i> Resume</a>
+            <a class="btn ghost magnetic" href="https://topmate.io/dhanaraj_sujatha10/" target="_blank" rel="noreferrer"><i class="fa-solid fa-graduation-cap"></i> Mentorship</a>
+          </div>
+        </div>
+
+        <figure class="hero-photo tilt">
+          <img src="images/profile_main.jpeg" alt="Dhanaraj S smiling by a harbour on a sunny day" width="1448" height="1086" fetchpriority="high" />
+          <figcaption class="status-badge"><span class="pulse-dot" aria-hidden="true"></span> Open to opportunities</figcaption>
+        </figure>
+      </div>
+
+      <h1 class="wordmark" aria-label="Dhanaraj S">
+        <span class="wm-inner" aria-hidden="true"><span>D</span><span>H</span><span>A</span><span>N</span><span>A</span><span>R</span><span>A</span><span>J</span></span>
+      </h1>
+    </section>
+
+    <!-- ═══════════════ LIVE DEMO (laptop) ═══════════════ -->
+    <section class="demo" aria-label="Skills demo">
+      <div class="wrap demo-grid">
+        <div class="laptop-stage" id="laptopStage">
+          <div class="laptop" id="laptop" role="button" tabindex="0" aria-label="Laptop showing a terminal skills demo. Activate to replay.">
+            <div class="laptop-screen">
+              <div class="screen-bezel">
+                <span class="camera-dot"></span>
+                <div class="screen-inner" id="screenInner">
+                  <div class="terminal-bar">
+                    <span class="tdot red"></span><span class="tdot yellow"></span><span class="tdot green"></span>
+                    <b>dhanaraj@portfolio: ~/skills</b>
+                  </div>
+                  <div class="terminal-body" id="terminalBody" aria-live="polite"></div>
+                </div>
+              </div>
+            </div>
+            <div class="laptop-base">
+              <div class="keyboard" id="keyboard"></div>
+              <div class="trackpad"></div>
+            </div>
+          </div>
+          <p class="laptop-hint" id="laptopHint"><i class="fa-solid fa-hand-pointer"></i> Click the laptop to replay the demo</p>
+        </div>
+
+        <div class="metrics">
+          <div><strong>Full-Stack</strong><span>React, MERN and API design</span></div>
+          <div><strong>System Design</strong><span>Scalable, fault-tolerant architecture</span></div>
+          <div><strong>CS Core</strong><span>DSA, OS, DBMS and networks</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ TECH TICKER ═══ -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Kafka</span><i></i><span>React</span><i></i><span>Spring Boot</span><i></i><span>Kubernetes</span><i></i><span>LangChain</span><i></i><span>PostgreSQL</span><i></i><span>Redis</span><i></i><span>System Design</span><i></i><span>Node.js</span><i></i><span>RAG</span><i></i><span>Docker</span><i></i><span>DSA</span><i></i>
+        <span>Kafka</span><i></i><span>React</span><i></i><span>Spring Boot</span><i></i><span>Kubernetes</span><i></i><span>LangChain</span><i></i><span>PostgreSQL</span><i></i><span>Redis</span><i></i><span>System Design</span><i></i><span>Node.js</span><i></i><span>RAG</span><i></i><span>Docker</span><i></i><span>DSA</span><i></i>
+      </div>
+    </div>
+
+    <!-- ═══════════════ ABOUT ═══════════════ -->
+    <section class="section about" id="about">
+      <div class="wrap about-grid">
+        <div class="about-head reveal">
+          <h2 class="decode">Software developer with a product, systems &amp; mentoring mindset.</h2>
+          <div class="stat-row">
+            <div class="stat"><b class="count" data-count="1000" data-suffix="+">0</b><small>problems solved</small></div>
+            <div class="stat"><b class="count" data-count="10" data-suffix="+">0</b><small>systems built</small></div>
+            <div class="stat"><b class="count" data-count="1">0</b><small>published paper</small></div>
+          </div>
+        </div>
+        <div class="about-body reveal">
+          <p class="lede">I am <b>Dhanaraj S</b>, a Software Engineer focused on backend systems, full-stack development,
+          distributed architectures, and AI-powered applications. I enjoy building scalable platforms,
+          developer-productivity tools, automation systems, and research-driven products.</p>
+          <p>My foundation includes Data Structures &amp; Algorithms, Operating Systems, DBMS, Computer Networks,
+          OOP, System Design, and competitive programming. I also mentor students and early-career engineers in
+          DSA, full-stack development, resumes, and interview preparation.</p>
+          <ul class="about-chips" aria-label="Focus areas">
+            <li><i class="fa-solid fa-server"></i> Backend systems</li>
+            <li><i class="fa-solid fa-diagram-project"></i> Distributed architecture</li>
+            <li><i class="fa-solid fa-brain"></i> LLM products</li>
+            <li><i class="fa-solid fa-chalkboard-user"></i> Mentoring</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ PROJECTS ═══════════════ -->
+    <section class="section projects" id="projects">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2 class="decode">Products built around automation, AI &amp; developer productivity.</h2>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card reveal">
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="project-main">
+              <span class="tag"><i class="fa-solid fa-brain"></i> LLM platform</span>
+              <h3>AI Influencer Follower Interaction System</h3>
+              <p>An LLM-powered platform for creators and influencers to manage follower conversations, automate repetitive
+              engagement, and keep human oversight for sensitive or high-value interactions.</p>
+              <ul class="stack" aria-label="Tech stack"><li>React</li><li>Node.js</li><li>LangChain</li><li>Vector DB</li></ul>
+            </div>
+            <div class="project-side">
+              <div class="pipeline" aria-hidden="true"><b>msg.in</b><span class="pipe"><em></em><em></em><em></em></span><b>reply.out</b></div>
+              <ul class="features">
+                <li>LLM chat workflows</li>
+                <li>Semantic memory &amp; context handling</li>
+                <li>Automated replies with review queue</li>
+                <li>Analytics for audience interaction</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="project-main">
+              <span class="tag"><i class="fa-solid fa-robot"></i> Automation</span>
+              <h3>JobIQ — Intelligent Job Application Platform</h3>
+              <p>A job application platform that finds relevant job openings, ranks opportunities, optimises resume
+              alignment, and helps apply faster to matching positions.</p>
+              <ul class="stack" aria-label="Tech stack"><li>React</li><li>Spring Boot</li><li>PostgreSQL</li><li>AI matching</li></ul>
+            </div>
+            <div class="project-side">
+              <div class="pipeline" aria-hidden="true"><b>job.found</b><span class="pipe"><em></em><em></em><em></em></span><b>applied ✔</b></div>
+              <ul class="features">
+                <li>Job relevance scoring</li>
+                <li>Resume / job matching engine</li>
+                <li>Application tracking dashboard</li>
+                <li>Automation-first workflow</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="project-main">
+              <span class="tag"><i class="fa-solid fa-puzzle-piece"></i> Chrome extension</span>
+              <h3>LeetCode &amp; Online Judge Assistant</h3>
+              <p>A browser extension for coding platforms that provides progressive hints, optimised solution guidance,
+              clean-code suggestions, and complexity analysis without killing the learning process.</p>
+              <ul class="stack" aria-label="Tech stack"><li>JavaScript</li><li>Chrome APIs</li><li>DSA</li><li>AI</li></ul>
+            </div>
+            <div class="project-side">
+              <div class="pipeline" aria-hidden="true"><b>stuck?</b><span class="pipe"><em></em><em></em><em></em></span><b>hint.sent</b></div>
+              <ul class="features">
+                <li>Hint-first problem solving</li>
+                <li>Optimised code suggestions</li>
+                <li>Time / space complexity analysis</li>
+                <li>Clean-code best practices</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ RESEARCH ═══════════════ -->
+    <section class="section research" id="research">
+      <div class="wrap research-grid">
+        <div class="research-copy reveal">
+          <h2 class="decode">Research paper on LLMs to boost social-media interaction.</h2>
+          <p class="section-sub">Peer-reviewed work behind the AI influencer platform. Read it in full, or preview it right here.</p>
+          <div class="hero-actions">
+            <a class="btn primary magnetic" href="https://drive.google.com/file/d/1NjBheXpmYbpDRc-nkQURP0CThaM_tnl5/view?usp=sharing" target="_blank" rel="noreferrer"><i class="fa-solid fa-book-open"></i> Open paper</a>
+            <a class="btn ghost magnetic" href="#paperPreview"><i class="fa-solid fa-eye"></i> Preview below</a>
+          </div>
+        </div>
+        <div class="paper-wrap">
+          <div class="stamp" id="stamp">Published<br /><b>2025</b></div>
+          <div class="paper-card" id="paperPreview">
+            <div class="browser-bar">
+              <span></span><span></span><span></span><b>research_paper.pdf</b>
+            </div>
+            <iframe title="Research paper preview" loading="lazy"
+              src="https://drive.google.com/file/d/1NjBheXpmYbpDRc-nkQURP0CThaM_tnl5/preview" allow="autoplay"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ SKILLS ═══════════════ -->
+    <section class="section skills" id="skills">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2 class="decode">A developer skillset on strong CS fundamentals.</h2>
+        </div>
+        <div class="skill-matrix">
+          <div class="skill-box reveal"><i class="fa-solid fa-layer-group"></i><h3>Full-Stack</h3><p>React, Next.js, JavaScript, TypeScript, Tailwind, Redux, responsive UI</p><div class="skill-meter" role="img" aria-label="92%"><span style="--w:92%"></span></div></div>
+          <div class="skill-box reveal"><i class="fa-solid fa-server"></i><h3>Backend</h3><p>Node.js, Express.js, Spring Boot, REST APIs, Auth, Microservices</p><div class="skill-meter" role="img" aria-label="94%"><span style="--w:94%"></span></div></div>
+          <div class="skill-box reveal"><i class="fa-solid fa-cubes"></i><h3>MERN</h3><p>MongoDB, Express, React, Node.js, API design, deployment workflows</p><div class="skill-meter" role="img" aria-label="90%"><span style="--w:90%"></span></div></div>
+          <div class="skill-box reveal"><i class="fa-solid fa-database"></i><h3>Databases</h3><p>PostgreSQL, MySQL, MongoDB, Redis, schema design, query optimisation</p><div class="skill-meter" role="img" aria-label="88%"><span style="--w:88%"></span></div></div>
+          <div class="skill-box reveal"><i class="fa-solid fa-microchip"></i><h3>Computer Science</h3><p>DSA, OS, DBMS, CN, OOP, Distributed Systems, System Design</p><div class="skill-meter" role="img" aria-label="95%"><span style="--w:95%"></span></div></div>
+          <div class="skill-box reveal"><i class="fa-solid fa-wand-magic-sparkles"></i><h3>AI &amp; LLM</h3><p>LangChain, RAG, vector databases, prompt engineering, AI agents</p><div class="skill-meter" role="img" aria-label="91%"><span style="--w:91%"></span></div></div>
+          <div class="skill-box reveal"><i class="fa-brands fa-docker"></i><h3>DevOps</h3><p>Docker, Kubernetes, AWS, Linux, GitHub Actions, CI/CD</p><div class="skill-meter" role="img" aria-label="86%"><span style="--w:86%"></span></div></div>
+          <div class="skill-box reveal"><i class="fa-solid fa-trophy"></i><h3>Competitive Programming</h3><p>LeetCode, algorithms, problem solving, interview preparation</p><div class="skill-meter" role="img" aria-label="93%"><span style="--w:93%"></span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ LEETCODE ═══════════════ -->
+    <section class="section leetcode" id="leetcode">
+      <div class="wrap leetcode-card reveal">
+        <div class="lc-copy">
+          <h2 class="decode">LeetCode problem solving</h2>
+          <p class="solved"><span class="prob-count" id="probCount" data-fallback="1020">…</span><span class="solved-label">problems solved</span></p>
+          <div class="lc-spark" aria-hidden="true">
+            <svg viewBox="0 0 220 46" preserveAspectRatio="none"><polyline id="sparkLine" points="" fill="none"/></svg>
+          </div>
+          <a class="btn light magnetic" href="https://leetcode.com/dan_stark123/" target="_blank" rel="noreferrer"><i class="fa-solid fa-code"></i> LeetCode profile</a>
+        </div>
+        <div class="rings">
+          <div class="ring ring-easy"   id="ringEasy"><svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="52"/><circle class="bar" cx="60" cy="60" r="52"/></svg><div class="ring-label"><span>—</span><small>Easy</small></div></div>
+          <div class="ring ring-medium" id="ringMedium"><svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="52"/><circle class="bar" cx="60" cy="60" r="52"/></svg><div class="ring-label"><span>—</span><small>Medium</small></div></div>
+          <div class="ring ring-hard"   id="ringHard"><svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="52"/><circle class="bar" cx="60" cy="60" r="52"/></svg><div class="ring-label"><span>—</span><small>Hard</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ MENTORSHIP ═══════════════ -->
+    <section class="section mentorship" id="mentorship">
+      <div class="wrap mentor-grid">
+        <h2 class="decode reveal">Helping students &amp; engineers become job-ready.</h2>
+        <div class="mentor-body reveal">
+          <p>I mentor learners in Data Structures &amp; Algorithms, system design, backend development,
+          full-stack engineering, software careers, resume improvement, and technical interview preparation.</p>
+          <ul class="mentor-list">
+            <li>DSA coaching</li><li>System design</li><li>Resume review</li>
+            <li>Mock interviews</li><li>Full-stack roadmap</li><li>Backend projects</li>
+          </ul>
+          <a class="btn light magnetic" href="https://topmate.io/dhanaraj_sujatha10/" target="_blank" rel="noreferrer"><i class="fa-solid fa-calendar-check"></i> Book on Topmate</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ CONTACT ═══════════════ -->
+    <section class="section contact" id="contact">
+      <div class="wrap contact-grid">
+        <div class="contact-copy reveal">
+          <h2 class="decode">Let's build something great.</h2>
+          <p class="section-sub">Have an opportunity, collaboration, mentorship request, or project idea? Send a message.</p>
+          <ul class="contact-links">
+            <li><a href="mailto:dhanarajwebsite@gmail.com"><i class="fa-solid fa-envelope"></i><span>dhanarajwebsite@gmail.com</span></a></li>
+            <li><a href="https://www.linkedin.com/in/dhanaraj-s-7a6147138" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a></li>
+            <li><a href="https://github.com/dhanarajappu456" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i><span>GitHub</span></a></li>
+          </ul>
+        </div>
+        <form class="contact-form reveal" id="contactForm" action="https://formsubmit.co/dhanarajwebsite@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value="https://dhanarajappu456.github.io/thankyou.html" />
+          <input type="hidden" name="_subject" value="New portfolio contact message" />
+          <div class="form-row">
+            <label class="field"><span>Name</span><input type="text" name="name" placeholder="Your name" autocomplete="name" required /></label>
+            <label class="field"><span>Email</span><input type="email" name="email" placeholder="you@email.com" autocomplete="email" required /></label>
+          </div>
+          <label class="field"><span>Subject</span><input type="text" name="subject" placeholder="What is this about?" required /></label>
+          <label class="field"><span>Message</span><textarea name="message" rows="6" placeholder="Tell me about it…" required></textarea></label>
+          <button class="btn primary magnetic" type="submit" id="sendBtn"><i class="fa-solid fa-paper-plane"></i> <span>Send message</span></button>
+          <p class="form-note" id="formNote" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year"></span> Dhanaraj S. Built with caffeine, Kafka events &amp; clean code.</p>
+      <p class="footer-links">
+        <a href="https://github.com/dhanarajappu456" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/dhanaraj-s-7a6147138" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://leetcode.com/dan_stark123/" target="_blank" rel="noreferrer" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+        <a href="mailto:dhanarajwebsite@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </p>
+    </div>
+  </footer>
+
+  <a class="scroll-up-btn" id="scrollUp" href="#home" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+
+  <script src="script.js"></script>
+</body>
+</html>

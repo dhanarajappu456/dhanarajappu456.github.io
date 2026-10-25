@@ -1,0 +1,25 @@
+Portfolio v4 redesign
+
+Changed files: index.html, style.css, script.js, thankyou.html
+Everything else (images, PDFs, favicon) is untouched and paths are unchanged.
+
+New look
+- Light "paper" base with indigo ink and an electric cobalt brand colour.
+- Fonts: Anybody (wide display) + Instrument Sans (text). JetBrains Mono only in the terminal.
+- Hero: big DHANARAJ wordmark with your harbour photo and an "Open to opportunities" badge.
+- Laptop terminal demo moved to its own dark band (opens when scrolled into view; click or Enter replays it).
+- Projects as wide rows with flow diagrams; skills as a ruled table; LeetCode on a dark band;
+  mentorship on a cobalt band; thank-you page restyled to match.
+
+Kept working
+- Boot screen, nav + mobile menu, sound toggle, typewriter, heading decode effect, counters,
+  section rail, scroll progress, back-to-top, research paper preview + stamp, LeetCode rings + sparkline,
+  FormSubmit contact form (same action, hidden fields and _next redirect), resume + Topmate links.
+
+Small fixes
+- LeetCode: tries a second stats API before falling back to the built-in numbers; 7s timeout.
+- Contact form: shows a clear note if opened as file:// instead of failing silently.
+- Mobile menu closes with Escape; laptop is keyboard accessible; no sideways scroll on phones.
+- Removed: starfield canvas, scanlines and the second slogan ticker (old dark-theme decoration).
+
+Local test: python -m http.server 5500  then open http://localhost:5500
